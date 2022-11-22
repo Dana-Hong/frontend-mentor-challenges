@@ -23,7 +23,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
--   [Live site]()
+-   [Live site](https://fem-qr-code-component-tailwind.netlify.app/)
 
 ## My process
 
