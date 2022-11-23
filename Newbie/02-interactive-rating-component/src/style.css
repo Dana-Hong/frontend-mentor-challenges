@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Overpass", sans-serif;
+}
+
+.clicked {
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+
+.rate-button:hover {
+    cursor: pointer;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.submit-button:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+.hide {
+    transform: rotateY(90deg);
+    transition: transform 1s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    animation: rotate 1s ease;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(90deg);
+    }
+    to {
+        transform: rotateY(0);
+    }
+}
