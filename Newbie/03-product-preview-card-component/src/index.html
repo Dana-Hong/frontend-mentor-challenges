@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
+        <link rel="stylesheet" href="../dist/output.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Frontend Mentor | Product preview card component</title>
+    </head>
+    <body>
+        <main class="min-h-screen h-screen bg-[#F2EBE3] flex justify-center items-center px-4">
+            <article class="flex flex-col rounded rounded-xl bg-white">
+                <div class="p-5">
+                    <p class="uppercase tracking-widest pb-2 text-[#6C7289]">Perfume</p>
+                    <p class="fraunces text-3xl text-[#1C232B]">Gabrielle Essence Eau De Parfum</p>
+                    <p class="py-4 text-[#6C7289]">
+                        A floral, solar and voluptuous interpretation composed by Olivier Polge,
+                        Perfumer-Creator for the House of CHANEL.
+                    </p>
+                    <div class="grid grid-cols-2 items-center py-2">
+                        <p class="fraunces text-3xl text-[#3C8067]">$149.99</p>
+                        <p class="line-through text-[#6C7289]">$169.99</p>
+                    </div>
+                    <button
+                        class="bg-[#3C8067] w-full rounded-xl mt-3 py-3 text-white flex justify-center items-center gap-3"
+                    >
+                        <img src="../images/icon-cart.svg" alt="" />
+                        <p>Add to Cart</p>
+                    </button>
+                </div>
+                <img
+                    src="../images/image-product-mobile.jpg"
+                    alt=""
+                    class="order-first rounded-t-xl"
+                />
+            </article>
+        </main>
+    </body>
+</html>
