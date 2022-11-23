@@ -10,3 +10,7 @@ body {
 .fraunces {
     font-family: "Fraunces", serif;
 }
+
+.add-to-cart-button:active {
+    background-color: hsl(155, 39%, 17%);
+}

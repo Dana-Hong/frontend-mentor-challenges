@@ -15,31 +15,49 @@
     </head>
     <body>
         <main class="min-h-screen h-screen bg-[#F2EBE3] flex justify-center items-center px-4">
-            <article class="flex flex-col rounded rounded-xl bg-white">
-                <div class="p-5">
-                    <p class="uppercase tracking-widest pb-2 text-[#6C7289]">Perfume</p>
-                    <p class="fraunces text-3xl text-[#1C232B]">Gabrielle Essence Eau De Parfum</p>
-                    <p class="py-4 text-[#6C7289]">
+            <article
+                class="flex flex-col min-[600px]:flex-row rounded rounded-lg bg-white max-w-[570px]"
+            >
+                <div class="p-5 min-[600px]:w-1/2 min-[600px]:p-7 flex flex-col justify-between">
+                    <!-- pb-2 -->
+                    <p class="uppercase tracking-widest text-[#6C7289] pb-2 min-[600px]:pb-0">
+                        Perfume
+                    </p>
+                    <p class="fraunces text-3xl text-[#1C232B] min-[600px]:w-5/6">
+                        Gabrielle Essence Eau De Parfum
+                    </p>
+                    <!-- py-4 -->
+                    <p class="text-[#6C7289] py-4 min-[600px]:py-0">
                         A floral, solar and voluptuous interpretation composed by Olivier Polge,
                         Perfumer-Creator for the House of CHANEL.
                     </p>
-                    <div class="grid grid-cols-2 items-center py-2">
-                        <p class="fraunces text-3xl text-[#3C8067]">$149.99</p>
+                    <!-- py-2 -->
+                    <div class="flex items-center py-2 min-[600px]:py-0">
+                        <p class="fraunces text-3xl text-[#3C8067] pr-4">$149.99</p>
                         <p class="line-through text-[#6C7289]">$169.99</p>
                     </div>
+                    <!-- mt-3 py-3 -->
                     <button
-                        class="bg-[#3C8067] w-full rounded-xl mt-3 py-3 text-white flex justify-center items-center gap-3"
+                        class="bg-[#3C8067] w-full mt-3 min-[600px]:mt-0 py-3 rounded-lg text-white flex justify-center items-center gap-3 add-to-cart-button"
                     >
                         <img src="../images/icon-cart.svg" alt="" />
                         <p>Add to Cart</p>
                     </button>
                 </div>
-                <img
-                    src="../images/image-product-mobile.jpg"
-                    alt=""
-                    class="order-first rounded-t-xl"
-                />
+                <picture class="order-first min-[600px]:w-1/2">
+                    <source
+                        media="(min-width: 600px)"
+                        srcset="../images/image-product-desktop.jpg"
+                        class="grow"
+                    />
+                    <img
+                        src="../images/image-product-mobile.jpg"
+                        alt=""
+                        class="rounded-t-lg min-[600px]:rounded-none min-[600px]:rounded-l-lg"
+                    />
+                </picture>
             </article>
         </main>
     </body>
 </html>
+<!-- min-[450px]:rounded-none min-[450px]:rounded-l-xl h-full" -->
