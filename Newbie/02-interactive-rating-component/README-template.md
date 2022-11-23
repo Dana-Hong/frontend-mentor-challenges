@@ -21,7 +21,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### Links
 
--   [Live site](https://fem-qr-code-component-tailwind.netlify.app/)
+-   [Live site](https://frontend-interactiveratingcomponent.netlify.app/)
 
 ## My process
 
@@ -34,7 +34,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### What I learned
 
-Though I already know Tailwind, this was good practice for installing and using it.
+Extra practice with Tailwind, CSS keyframes and animations.
 
 ### Useful resources
 
