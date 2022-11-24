@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../dist/output.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
+
+        <title>Frontend Mentor | 3-column preview card component</title>
+    </head>
+    <body class="min-h-screen text-[15px]">
+        <main class="min-h-screen flex justify-center items-center py-12 px-4">
+            <article class="flex flex-col md:flex-row">
+                <div
+                    class="bg-[#e38826] p-14 rounded-t-md max-w-[345px] md:rounded-none md:rounded-l-md"
+                >
+                    <img src="../images/icon-sedans.svg" alt="" />
+                    <h2 class="block uppercase text-white text-4xl py-7">Sedans</h2>
+                    <p class="pb-7 md:pb-20">
+                        Choose a sedan for its affordability and excellent fuel economy. Ideal for
+                        cruising in the city or on your next road trip.
+                    </p>
+                    <button class="text-[#e38826] rounded-3xl py-2 px-8 hover:bg-[#e38826]">
+                        Learn More
+                    </button>
+                </div>
+                <div class="bg-[#006970] p-14 max-w-[345px]">
+                    <img src="../images/icon-suvs.svg" alt="" />
+                    <h2 class="block uppercase text-white text-4xl py-7">SUVs</h2>
+                    <p class="pb-7 md:pb-20">
+                        Take an SUV for its spacious interior, power, and versatility. Perfect for
+                        your next family vacation and off-road adventures.
+                    </p>
+                    <button class="text-[#006970] rounded-3xl py-2 px-8 hover:bg-[#006970]">
+                        Learn More
+                    </button>
+                </div>
+                <div
+                    class="bg-[#004241] p-14 rounded-b-md max-w-[345px] md:rounded-none md:rounded-r-md"
+                >
+                    <img src="../images/icon-luxury.svg" alt="" />
+                    <h2 class="block uppercase text-white text-4xl py-7">Luxury</h2>
+                    <p class="pb-7 md:pb-20">
+                        Cruise in the best car brands without the bloated prices. Enjoy the enhanced
+                        comfort of a luxury rental and arrive in style.
+                    </p>
+                    <button class="text-[#004241] rounded-3xl py-2 px-8 hover:bg-[#004241]">
+                        Learn More
+                    </button>
+                </div>
+            </article>
+        </main>
+    </body>
+</html>
+
+<style>
+    .test {
+        color: #e38826;
+        color: #006970;
+        color: #004241;
+        color: hsla(0, 0%, 100%, 0.75);
+    }
+</style>

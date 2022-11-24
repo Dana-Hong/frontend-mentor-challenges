@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+}
+
+main,
+button {
+    background-color: hsl(0, 0%, 95%);
+}
+
+button {
+    border: solid 1px hsl(0, 0%, 95%);
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+h2 {
+    font-family: "Big Shoulders Display", cursive;
+    color: hsl(0, 0%, 95%);
+}
+
+button:hover {
+    border: solid 1px hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
