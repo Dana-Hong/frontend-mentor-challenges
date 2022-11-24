@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
+        <link rel="stylesheet" href="../dist/output.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Frontend Mentor | Profile card component</title>
+    </head>
+    <body class="min-h-screen text-[18px] overflow-x-hidden overflow-y-hidden">
+        <main class="min-h-screen flex justify-center items-center bg-[#19A2AE] relative">
+            <img
+                src="../images/bg-pattern-top.svg"
+                alt=""
+                class="absolute translate-x-[-50%] translate-y-[-50%]"
+            />
+
+            <img
+                src="../images/bg-pattern-bottom.svg"
+                alt=""
+                class="absolute translate-x-[50%] translate-y-[50%]"
+            />
+            <article class="flex flex-col max-w-[350px] z-10">
+                <div class="rounded-b-xl bg-white text-center">
+                    <img
+                        src="../images/image-victor.jpg"
+                        alt=""
+                        class="rounded-full border-4 border-white w-[104px] mx-auto mt-[-52px] mb-4"
+                    />
+                    <div>
+                        <span class="text-[#2D3248] font-bold"> Victor Crest </span>
+                        <span class="text-[#6A6F81]"> 26 </span>
+                    </div>
+                    <span class="text-[#6A6F81] text-sm"> London </span>
+                    <div class="flex justify-evenly mt-10 mb-8">
+                        <div class="flex flex-col items-center gap-1">
+                            <span class="text-[#2D3248] font-bold"> 80K </span>
+                            <span class="text-[#6A6F81] text-xs tracking-widest"> Followers </span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1">
+                            <span class="text-[#2D3248] font-bold"> 803K </span>
+                            <span class="text-[#6A6F81] text-xs tracking-widest"> Likes </span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1">
+                            <span class="text-[#2D3248] font-bold"> 1.4K </span>
+                            <span class="text-[#6A6F81] text-xs tracking-widest"> Photos </span>
+                        </div>
+                    </div>
+                </div>
+                <img src="../images/bg-pattern-card.svg" alt="" class="rounded-t-xl order-first" />
+            </article>
+        </main>
+    </body>
+</html>
