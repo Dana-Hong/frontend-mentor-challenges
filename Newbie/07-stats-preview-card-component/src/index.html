@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
+        <link rel="stylesheet" href="../dist/output.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+            rel="stylesheet"
+        />
+        <title>Frontend Mentor | Stats preview card component</title>
+    </head>
+    <body class="font-[15px] min-h-screen">
+        <main class="min-h-screen flex items-center justify-center bg-[#090B1A]">
+            <article class="flex flex-col max-w-[500px] lg:flex-row lg:max-w-[1162px]">
+                <div
+                    class="bg-[#1B1938] rounded-b-md flex flex-col gap-5 p-10 lg:rounded-none lg:rounded-l-md lg:w-1/2 lg:pl-20 lg:py-20 lg:pr-24"
+                >
+                    <h1
+                        class="font-['Inter'] text-white text-3xl tracking-wide font-bold text-center px-2 lg:text-left"
+                    >
+                        Get <span class="text-[#AA5CDB]"> insights </span> that help your business
+                        grow.
+                    </h1>
+                    <p class="text-white/75 text-center tracking-wide px-2 lg:text-left lg:py-6">
+                        Discover the benefits of data analytics and make better decisions regarding
+                        revenue, customer experience, and overall efficiency.
+                    </p>
+                    <div class="flex flex-col gap-5 lg:flex-row lg:mt-auto">
+                        <div class="flex flex-col items-center gap-1 px-2 lg:items-start">
+                            <span class="text-white font-bold text-2xl"> 10k+ </span>
+                            <span class="text-white opacity-60 uppercase tracking-widest text-md">
+                                companies
+                            </span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 px-2 lg:items-start">
+                            <span class="text-white font-bold text-2xl"> 314 </span>
+                            <span class="text-white opacity-60 uppercase tracking-widest text-md">
+                                templates
+                            </span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 px-2 lg:items-start">
+                            <span class="text-white font-bold text-2xl"> 12M+ </span>
+                            <span class="text-white opacity-60 uppercase tracking-widest text-md">
+                                queries
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <picture
+                    class="bg-[#AA5CDB] rounded-t-md order-first lg:order-last lg:w-1/2 lg:rounded-none lg:rounded-r-md"
+                >
+                    <source
+                        media="(min-width: 1024px)"
+                        srcset="../images/image-header-desktop.jpg"
+                    />
+                    <img
+                        src="../images/image-header-desktop.jpg"
+                        alt=""
+                        class="mix-blend-multiply object-cover w-full lg:h-full"
+                    />
+                </picture>
+            </article>
+        </main>
+    </body>
+</html>
