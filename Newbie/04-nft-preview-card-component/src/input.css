@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+}
+
+.hover {
+    transition: color 450ms ease;
+}
+
+.hover:hover {
+    color: #00fff7;
+}
+
+.view {
+    opacity: 0;
+    transition: opacity 300ms ease, background-color 450ms ease;
+}
+
+.view:hover {
+    opacity: 1;
+    background-color: rgba(0, 255, 247, 0.5);
+}
