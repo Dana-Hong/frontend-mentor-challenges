@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
+        <link rel="stylesheet" href="../dist/output.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Frontend Mentor | Order summary card</title>
+    </head>
+    <body>
+        <main class="min-h-screen h-screen bg-[#E0E8FF] flex justify-center items-center px-4">
+            <article class="flex flex-col widget-shadow rounded-xl max-w-[350px]">
+                <div class="bg-[#f5f7ff] p-5 text-center rounded-b-2xl">
+                    <h1 class="text-2xl text-[#1F2F56] font-black py-3">Order Summary</h1>
+                    <p class="text-[#7280a7] py-2 px-4">
+                        You can now listen to millions of songs, audiobooks, and podcasts on any
+                        device anywhere you like!
+                    </p>
+                    <div class="flex items-center p-5">
+                        <img src="../images/icon-music.svg" alt="" />
+                        <div class="flex flex-col items-center">
+                            <span class="text-[#1F2F56] font-black px-5"> Annual Plan </span>
+                            <span class="text-[#7280a7]"> $59.99/year </span>
+                        </div>
+                        <span
+                            class="text-[#3829E0] ml-auto underline cursor-pointer hover:text-[#776DF1] hover:no-underline transition-all duration-300 ease-in-out"
+                        >
+                            Change
+                        </span>
+                    </div>
+                    <div class="flex flex-col p-2 gap-2">
+                        <button
+                            class="bg-[#3829E0] text-white py-2 rounded-lg button-shadow hover:bg-[#776DF1]"
+                        >
+                            Proceed to Payment</button
+                        ><button class="text-[#7280a7] font-bold py-2 hover:text-[#1f2f56]">
+                            Cancel Order
+                        </button>
+                    </div>
+                </div>
+                <img
+                    src="../images/illustration-hero.svg"
+                    alt=""
+                    class="order-first rounded-t-2xl"
+                />
+            </article>
+        </main>
+    </body>
+</html>
