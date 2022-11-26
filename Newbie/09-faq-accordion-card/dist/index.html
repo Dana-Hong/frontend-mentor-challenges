@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <link rel="stylesheet" href="./output.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="./index.js" defer></script>
+        <title>Frontend Mentor | FAQ Accordion Card</title>
+    </head>
+    <body class="min-h-screen">
+        <main
+            class="min-h-screen flex justify-center items-center bg-gradient-to-b from-[#af67e9] to-[#6565e7]"
+        >
+            <article class="flex flex-col bg-[#e7e7e9] rounded-2xl items-center lg:flex-row">
+                <div class="pb-12 lg:pt-12">
+                    <h1 class="text-2xl font-bold text-center lg:text-left lg:p-6">FAQ</h1>
+                    <div class="p-6 max-w-[450px] lg:p-0 lg:px-6 lg:pb-6">
+                        <div
+                            class="flex justify-between items-start gap-4 border-b-[1px] border-[#787887] question-container"
+                        >
+                            <div class="flex flex-col">
+                                <span
+                                    class="py-4 text-[#1d1e35] hover:text-[#f47c57] question z-10"
+                                >
+                                    How many team members can I invite?
+                                </span>
+                                <p class="response text-[12px]">
+                                    There is no limit on team members for the Premium plan. You can
+                                    invite up to 2 additional users on the Free plan.
+                                </p>
+                            </div>
+                            <input
+                                type="image"
+                                src="./images/icon-arrow-down.svg"
+                                alt=""
+                                class="py-6 toggle-button"
+                            />
+                        </div>
+                        <div
+                            class="flex justify-between items-start gap-4 border-b-[1px] border-[#787887] question-container"
+                        >
+                            <div class="flex flex-col">
+                                <span
+                                    class="py-4 text-[#1d1e35] hover:text-[#f47c57] question z-10"
+                                >
+                                    What is the maximum file upload size?
+                                </span>
+                                <p class="response text-[12px]">
+                                    No more than 2GB. All files in your account must fit your
+                                    allotted storage space.
+                                </p>
+                            </div>
+                            <input
+                                type="image"
+                                src="./images/icon-arrow-down.svg"
+                                alt=""
+                                class="py-6 toggle-button"
+                            />
+                        </div>
+                        <div
+                            class="flex justify-between items-start gap-4 border-b-[1px] border-[#787887] question-container"
+                        >
+                            <div class="flex flex-col">
+                                <span
+                                    class="py-4 text-[#1d1e35] hover:text-[#f47c57] question z-10"
+                                >
+                                    How do I reset my password?
+                                </span>
+                                <p class="response text-[12px]">
+                                    Click “Forgot password” from the login page or “Change password”
+                                    from your profile page. A reset link will be emailed to you.
+                                </p>
+                            </div>
+                            <input
+                                type="image"
+                                src="./images/icon-arrow-down.svg"
+                                alt=""
+                                class="py-6 toggle-button"
+                            />
+                        </div>
+                        <div
+                            class="flex justify-between items-start gap-4 border-b-[1px] border-[#787887] question-container"
+                        >
+                            <div class="flex flex-col">
+                                <span
+                                    class="py-4 text-[#1d1e35] hover:text-[#f47c57] question z-10"
+                                >
+                                    Can I cancel my subscription?
+                                </span>
+                                <p class="response text-[12px]">
+                                    Yes! Send us a message and we'll process your request no
+                                    questions asked.
+                                </p>
+                            </div>
+                            <input
+                                type="image"
+                                src="./images/icon-arrow-down.svg"
+                                alt=""
+                                class="py-6 toggle-button"
+                            />
+                        </div>
+                        <div
+                            class="flex justify-between items-start gap-4 border-b-[1px] border-[#787887] question-container"
+                        >
+                            <div class="flex flex-col">
+                                <span
+                                    class="py-4 text-[#1d1e35] hover:text-[#f47c57] question z-10"
+                                >
+                                    Do you provide additional support?
+                                </span>
+                                <p class="response text-[12px]">
+                                    Chat and email support is available 24/7. Phone lines are open
+                                    during normal business hours.
+                                </p>
+                            </div>
+                            <input
+                                type="image"
+                                src="./images/icon-arrow-down.svg"
+                                alt=""
+                                class="py-6 toggle-button"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="relative order-first h-[150px] w-[150px] translate-y-[-50%] lg:w-[450px]"
+                >
+                    <picture
+                        class="absolute w-[240px] translate-y-[-30px] translate-x-[-45px] lg:w-[unset]"
+                    >
+                        <source
+                            media="(min-width: 1024px)"
+                            srcset="./images/illustration-woman-online-desktop.svg"
+                            class=""
+                        />
+                        <img
+                            src="./images/illustration-woman-online-mobile.svg"
+                            alt=""
+                            class="lg:translate-x-[-20px]"
+                        />
+                    </picture>
+                    <picture
+                        class="absolute w-[240px] translate-y-[-30px] translate-x-[-45px] lg:w-[900px]"
+                    >
+                        <source
+                            media="(min-width: 1024px)"
+                            srcset="./images/bg-pattern-desktop.svg"
+                        />
+                        <img
+                            src="./images/bg-pattern-mobile.svg"
+                            alt=""
+                            class="translate-y-[100px] lg:w-[900px] lg:h-[900px] lg:translate-y-[-350px] lg:translate-x-[-465px] z-50"
+                        />
+                    </picture>
+                    <picture class="absolute translate-y-[90px] translate-x-[-90px]">
+                        <source
+                            media="(min-width: 1024px)"
+                            srcset="./images/illustration-box-desktop.svg"
+                        />
+                        <img src="" alt="" />
+                    </picture>
+                </div>
+            </article>
+        </main>
+    </body>
+</html>

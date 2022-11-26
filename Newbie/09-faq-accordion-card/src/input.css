@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.response {
+    max-height: 0;
+    padding: 0;
+    opacity: 0;
+}
+
+.selected {
+    font-weight: 700;
+    transition: font-weight 300ms ease;
+}
+
+.flip {
+    transform: rotateZ(180deg);
+    transition: transform 300ms ease-in;
+}
+
+.unflip {
+    transform: rotateZ(0);
+    transition: transform 300ms ease-in;
+}
+
+.displayed {
+    opacity: 1;
+    max-height: 300px;
+    padding: 0 0 16px 0;
+}
+
+.hide {
+    opacity: 0;
+    max-height: 0;
+    padding: 0;
+    animation: hide 300ms linear;
+}
+
+.show {
+    animation: grow 300ms linear;
+}
+
+@keyframes grow {
+    from {
+        opacity: 0;
+        padding: 0;
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        padding: 0 0 16px 0;
+        max-height: 300px;
+    }
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+        padding: 16px 0;
+        max-height: 300px;
+    }
+    to {
+        opacity: 0;
+        padding: 0;
+        max-height: 0;
+    }
+}
