@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./output.css" />
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="./index.js" defer></script>
+        <title>Frontend Mentor | Article preview component</title>
+    </head>
+    <body class="min-h-screen">
+        <main class="min-h-screen flex justify-center items-center bg-[#9eafc2]">
+            <article
+                class="flex flex-col max-w-[400px] sm:flex-row sm:max-w-[800px] drop-shadow-[0px_10px_20px_#6d7f97]"
+            >
+                <div
+                    class="bg-[#ecf2f8] text-[13px] pt-6 px-6 pb-2 rounded-b-2xl sm:rounded-none sm:rounded-r-2xl"
+                >
+                    <div class="flex flex-col items-center gap-4 p-4">
+                        <h1 class="text-2xl">
+                            Shift the overall look and feel by adding these wonderful touches to
+                            furniture in your home
+                        </h1>
+                        <p class="text-[#6d7f97] leading-6">
+                            Ever been in a room and felt like something was missing? Perhaps it felt
+                            slightly bare and uninviting. I've got some simple tips to help you make
+                            any room feel complete.
+                        </p>
+                    </div>
+                    <div class="flex items-center p-4">
+                        <div class="flex flex-col ml-4">
+                            <span class="font-bold"> Michelle Appleton </span>
+                            <span class="text-[#9eafc2]"> 28 Jun 2020 </span>
+                        </div>
+                        <img
+                            src="./images/avatar-michelle.jpg"
+                            alt=""
+                            class="order-first w-[50px] h-[50px] rounded-full"
+                        />
+                        <div class="ml-auto p-2 rounded-full relative">
+                            <div
+                                class="hidden absolute flex items-center justify-center gap-4 w-[225px] h-[45px] bg-[#48556a] rounded-lg left-[50%] top-[-60px] translate-x-[-50%] share shadow-[0_5px_10px_0px_#9eafc2]"
+                            >
+                                <span class="uppercase tracking-[.25em] text-[#9eafc2] text-[12px]"
+                                    >share</span
+                                >
+                                <img src="./images/icon-facebook.svg" alt="facebook" /><img
+                                    src="./images/icon-twitter.svg"
+                                    alt="twitter"
+                                /><img src="./images/icon-pinterest.svg" alt="pinterest" />
+                            </div>
+                            <input
+                                type="image"
+                                src="./images/icon-share.svg"
+                                alt=""
+                                class="share-button p-2 rounded-full"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <img
+                    src="./images/drawers.jpg"
+                    alt=""
+                    class="order-first rounded-t-2xl sm:w-[40%] object-cover sm:rounded-none sm:rounded-l-2xl"
+                />
+            </article>
+        </main>
+    </body>
+</html>

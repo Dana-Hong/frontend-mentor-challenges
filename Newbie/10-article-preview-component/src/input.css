@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Manrope", sans-serif;
+}
+
+.share::after {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    background-color: #48556a;
+    transform: translateY(12px) rotateZ(45deg);
+    z-index: -30;
+}
+
+/* .share::before {
+    content: "share";
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    width: 250px;
+    border-radius: 1em;
+
+    background-color: #48556a;
+} */
