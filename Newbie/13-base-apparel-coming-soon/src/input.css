@@ -26,7 +26,7 @@ body {
 }
 
 .text-field:valid {
-    border: solid green 1px;
+    border: solid #f96262 1px;
 }
 
 .text-field:invalid {

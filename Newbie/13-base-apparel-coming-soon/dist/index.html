@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
-        <link rel="stylesheet" href="../dist/output.css" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+        <link rel="stylesheet" href="./output.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -15,9 +15,9 @@
         <script src="./index.js" defer></script>
     </head>
     <body class="min-h-screen">
-        <main class="min-h-screen flex flex-col md:flex-row mx-auto">
+        <main class="min-h-screen flex flex-col md:flex-row max-w-[1440px] mx-auto">
             <div
-                class="flex flex-col md:grow min-h-screen md:items-start md:max-w-[864px] md:mx-auto md:justify-between"
+                class="flex flex-col md:grow min-h-screen md:items-start md:max-w-[500px] md:mx-auto md:justify-between"
             >
                 <div
                     class="flex flex-col items-center p-4 max-w-[440px] order-2 self-center md:self-start order-1"
@@ -46,44 +46,32 @@
                             class="text-field border-[#f8bfbf] placeholder:text-[#f8bfbf] border-[1px] rounded-3xl w-full py-3 px-5"
                         />
                         <img
-                            src="../images/icon-error.svg"
+                            src="./images/icon-error.svg"
                             alt=""
                             class="error-icon hidden block absolute top-[50%] right-[25%] translate-y-[-50%]"
                         />
                         <span class="absolute error"></span>
                         <input
                             type="image"
-                            src="../images/icon-arrow.svg"
+                            src="./images/icon-arrow.svg"
                             alt=""
-                            class="submit-button absolute right-0 bg-gradient-to-br from-[#f8bfbf] to-[#f96262] rounded-3xl h-[50px] py-4 px-6 md:px-10 shadow-[0_15px_30px_5px_#f8bfbf]"
+                            class="submit-button absolute right-0 bg-gradient-to-br from-[#f8bfbf] to-[#f96262] rounded-3xl h-[50px] py-4 px-6 md:px-10"
                         />
                     </form>
                 </div>
-                <img src="../images/hero-mobile.jpg" alt="" class="md:hidden" />
+                <img src="./images/hero-mobile.jpg" alt="" class="md:hidden" />
                 <img
-                    src="../images/logo.svg"
+                    src="./images/logo.svg"
                     alt=""
                     class="block order-first py-8 self-start pl-8 md:pl-6"
                 />
                 <div class="md:block h-[97px] order-2"></div>
             </div>
             <img
-                src="../images/hero-desktop.jpg"
+                src="./images/hero-desktop.jpg"
                 alt=""
-                class="hidden object-cover md:block w-2/5"
+                class="hidden object-cover md:block w-2/5 max-w-[736px]"
             />
         </main>
     </body>
 </html>
-
-<style>
-    .color {
-        color: #ce9797;
-        color: #f96262;
-        color: #413a3a;
-        color: #ffffff;
-        color: #fff5f5;
-        color: #f8bfbf;
-        color: #ee8c8c;
-    }
-</style>
