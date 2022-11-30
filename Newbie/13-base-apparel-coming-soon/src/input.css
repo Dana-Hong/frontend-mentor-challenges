@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.error {
+    width: 100%;
+}
+
+.error-active {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0 0 0 20px;
+    transform: translateY(10px);
+    color: #ee8c8c;
+}
+
+.text-field:focus {
+    outline: none;
+    border: solid #f96262 1px;
+}
+
+.text-field:valid {
+    border: solid green 1px;
+}
+
+.text-field:invalid {
+    border-color: red;
+}
+
+.text-field:focus:invalid {
+    outline: none;
+}
