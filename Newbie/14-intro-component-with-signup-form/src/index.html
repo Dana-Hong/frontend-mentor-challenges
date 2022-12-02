@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
+        <link rel="stylesheet" href="../dist/output.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Frontend Mentor | Intro component with sign up form</title>
+    </head>
+    <body class="min-h-screen">
+        <main
+            class="min-h-screen flex flex-col gap-4 justify-center items-center bg-[#ff7a7a] bg-[url('../images/bg-intro-mobile.png')] lg:flex-row"
+        >
+            <div
+                class="flex flex-col items-center justify-center text-white p-6 gap-6 max-w-[600px]"
+            >
+                <h1 class="text-3xl font-bold text-center lg:text-5xl lg:text-left">
+                    Learn to code by watching others
+                </h1>
+                <p class="text-center lg:text-left">
+                    See how experienced developers solve problems in real-time. Watching scripted
+                    tutorials is great, but understanding how developers think is invaluable.
+                </p>
+            </div>
+            <div class="flex flex-col p-6 gap-6 max-w-[600px]">
+                <p
+                    class="bg-[#6055a5] text-white text-center py-4 px-16 rounded-lg shadow-[0px_0.5em_2px_0px_rgb(62,60,73,0.25)]"
+                >
+                    <span class="font-semibold"> Try it free 7 days </span>
+                    then $20/mo. thereafter
+                </p>
+
+                <form
+                    action=""
+                    class="flex flex-col gap-4 p-6 bg-white rounded-lg shadow-[0px_0.5em_2px_0px_rgb(62,60,73,0.25)]"
+                >
+                    <input
+                        type="text"
+                        placeholder="First Name"
+                        class="p-4 border-[1px] placeholder:text-[#3e3c49] font-semibold"
+                    />
+                    <input
+                        type="text"
+                        placeholder="Last Name"
+                        class="p-4 border-[1px] placeholder:text-[#3e3c49] font-semibold"
+                    />
+                    <input
+                        type="text"
+                        placeholder="Email Address"
+                        class="p-4 border-[1px] placeholder:text-[#3e3c49] font-semibold"
+                    />
+                    <input
+                        type="text"
+                        placeholder="Password"
+                        class="p-4 border-[1px] placeholder:text-[#3e3c49] font-semibold"
+                    />
+                    <button
+                        type="button"
+                        class="uppercase text-white font-semibold py-4 px-4 bg-[#45bf8a] rounded-md tracking-wide border-b-4 border-green-600"
+                    >
+                        Claim your free trial
+                    </button>
+                    <span class="text-center text-gray-300 px-4 text-xs pb-2 leading-relaxed">
+                        By clicking the button, you are agreeing to our
+                        <span class="font-bold text-[#ff7a7a]"> Terms and Services </span>
+                    </span>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
+
+<style>
+    .color {
+        color: #ff7a7a;
+        color: #45bf8a;
+        color: #6055a5;
+        color: #3e3c49;
+        color: #afaadf;
+    }
+</style>
