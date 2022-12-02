@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./output.css" />
+        <title>Frontend Mentor | Single Price Grid Component</title>
+    </head>
+    <body>
+        <main class="min-h-screen flex justify-center items-center bg-[#E6EFF6]">
+            <article
+                class="grid grid-cols-1 min-[500px]:grid-cols-2 min-[500px]:grid-[minmax(0,_350px)_1fr]"
+            >
+                <div
+                    class="flex flex-col gap-4 justify-center p-6 bg-white col-span-full min-[500px]:p-10 min-[500px]:gap-4 rounded-t-lg"
+                >
+                    <h1 class="text-[hsl(179,62%,43%)] text-xl">Join our community</h1>
+                    <div class="flex flex-col gap-4 min-[500px]:gap-2">
+                        <span class="text-[hsl(71,73%,54%)] text-lg">
+                            30-day, hassle-free money back guarantee
+                        </span>
+                        <p class="text-[hsl(218,22%,67%)] leading-8 max-w-[545px]">
+                            Gain access to our full library of tutorials along with expert code
+                            reviews. Perfect for any developers who are serious about honing their
+                            skills.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col justify-evenly gap-6 p-6 text-white bg-[#2BB2B0] min-[500px]:p-10 min-[500px]:rounded-bl-lg"
+                >
+                    <h2 class="text-lg">Monthly Subscription</h2>
+                    <div class="flex flex-col gap-2">
+                        <div class="flex gap-4 items-center">
+                            <span class="text-4xl"> &dollar;29 </span>
+                            <span class="text-[hsl(204,43%,93%)"> per month </span>
+                        </div>
+                        <p class="tracking-wide">Full access for less than &dollar;1 a day</p>
+                    </div>
+                    <button
+                        class="bg-[hsl(71,73%,54%)] py-3 px-10 rounded-lg shadow-[0px_10px_10px_2px_#25A3A1]"
+                    >
+                        Sign Up
+                    </button>
+                </div>
+                <div
+                    class="flex flex-col gap-4 p-6 justify-evenly text-white bg-[#4BBEBC] min-[500px]:p-10 rounded-b-lg min-[500px]:rounded-b-none min-[500px]:rounded-br-lg"
+                >
+                    <h2 class="text-lg">Why Us</h2>
+                    <ul class="text-[hsl(204,43%,93%)]">
+                        <li>Tutorials by industry experts</li>
+                        <li>Peer &amp; expert code review</li>
+                        <li>Coding exercises</li>
+                        <li>Access to our GitHub repos</li>
+                        <li>Community forum</li>
+                        <li>Flashcard decks</li>
+                        <li>New videos every week</li>
+                    </ul>
+                </div>
+            </article>
+        </main>
+    </body>
+</html>
