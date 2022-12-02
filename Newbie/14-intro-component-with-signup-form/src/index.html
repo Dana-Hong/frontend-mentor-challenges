@@ -12,10 +12,11 @@
             rel="stylesheet"
         />
         <title>Frontend Mentor | Intro component with sign up form</title>
+        <script src="./index.js" defer></script>
     </head>
     <body class="min-h-screen">
         <main
-            class="min-h-screen flex flex-col gap-4 justify-center items-center bg-[#ff7a7a] bg-[url('../images/bg-intro-mobile.png')] lg:flex-row"
+            class="min-h-screen flex flex-col gap-4 justify-center items-center bg-[#ff7a7a] bg-[url('../images/bg-intro-mobile.png')] lg:bg-[url('../images/bg-intro-desktop.png')] lg:flex-row"
         >
             <div
                 class="flex flex-col items-center justify-center text-white p-6 gap-6 max-w-[600px]"
@@ -37,32 +38,87 @@
                 </p>
 
                 <form
-                    action=""
+                    action="#"
+                    novalidate
                     class="flex flex-col gap-4 p-6 bg-white rounded-lg shadow-[0px_0.5em_2px_0px_rgb(62,60,73,0.25)]"
                 >
-                    <input
-                        type="text"
-                        placeholder="First Name"
-                        class="p-4 border-[1px] placeholder:text-[#3e3c49] font-semibold"
-                    />
-                    <input
-                        type="text"
-                        placeholder="Last Name"
-                        class="p-4 border-[1px] placeholder:text-[#3e3c49] font-semibold"
-                    />
-                    <input
-                        type="text"
-                        placeholder="Email Address"
-                        class="p-4 border-[1px] placeholder:text-[#3e3c49] font-semibold"
-                    />
-                    <input
-                        type="text"
-                        placeholder="Password"
-                        class="p-4 border-[1px] placeholder:text-[#3e3c49] font-semibold"
-                    />
+                    <div class="flex flex-col">
+                        <div class="relative">
+                            <input
+                                type="text"
+                                name="First name"
+                                placeholder="First Name"
+                                required
+                                pattern="^[a-zA-Z ,'-]+$"
+                                class="p-4 border-[1px] placeholder:text-[#3e3c49] font-semibold rounded-md outline-0 focus:border-[#afaadf] w-full"
+                            />
+                            <img
+                                src="../images/icon-error.svg"
+                                alt=""
+                                class="hidden absolute top-[50%] translate-y-[-50%] right-6"
+                            />
+                        </div>
+                        <span class="text-xs italic text-[#ff7a7a] pt-2 text-right"></span>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="relative">
+                            <input
+                                type="text"
+                                name="Last name"
+                                placeholder="Last Name"
+                                required
+                                pattern="^[a-zA-Z ,'-]+$"
+                                class="p-4 border-[1px] placeholder:text-[#3e3c49] font-semibold rounded-md outline-0 focus:border-[#afaadf] w-full"
+                            />
+                            <img
+                                src="../images/icon-error.svg"
+                                alt=""
+                                class="hidden absolute top-[50%] translate-y-[-50%] right-6"
+                            />
+                        </div>
+                        <span class="text-xs italic text-[#ff7a7a] pt-2 text-right"></span>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="relative">
+                            <input
+                                type="email"
+                                name="Email"
+                                placeholder="Email Address"
+                                required
+                                class="p-4 border-[1px] placeholder:text-[#3e3c49] font-semibold rounded-md outline-0 focus:border-[#afaadf] w-full"
+                            />
+                            <img
+                                src="../images/icon-error.svg"
+                                alt=""
+                                class="hidden absolute top-[50%] translate-y-[-50%] right-6"
+                            />
+                        </div>
+                        <span class="text-xs italic text-[#ff7a7a] pt-2 text-right"></span>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="relative">
+                            <input
+                                type="password"
+                                name="Password"
+                                placeholder="Password"
+                                required
+                                minlength="8"
+                                pattern="/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/"
+                                class="p-4 border-[1px] placeholder:text-[#3e3c49] font-semibold rounded-md outline-0 focus:border-[#afaadf] w-full"
+                            />
+                            <img
+                                src="../images/icon-error.svg"
+                                alt=""
+                                class="hidden absolute top-[50%] translate-y-[-50%] right-6"
+                            />
+                        </div>
+                        <span
+                            class="block text-xs italic text-[#ff7a7a] pt-2 max-w-[431px] text-right"
+                        ></span>
+                    </div>
                     <button
                         type="button"
-                        class="uppercase text-white font-semibold py-4 px-4 bg-[#45bf8a] rounded-md tracking-wide border-b-4 border-green-600"
+                        class="submit-button uppercase text-white font-semibold py-4 px-4 bg-[#45bf8a] rounded-md tracking-wide border-b-4 border-green-600 active:bg-[rgb(56,204,140,.75)]"
                     >
                         Claim your free trial
                     </button>

@@ -5,3 +5,8 @@
 body {
     font-family: "Poppins", sans-serif;
 }
+
+.error {
+    display: block;
+    border-color: #ff7a7a;
+}
