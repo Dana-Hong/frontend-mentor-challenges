@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+            />
+            <link
+                  rel="icon"
+                  type="image/png"
+                  sizes="32x32"
+                  href="./assets/images/favicon-32x32.png"
+            />
+            <link
+                  rel="stylesheet"
+                  href="./output.css"
+            />
+            <link
+                  rel="preconnect"
+                  href="https://fonts.googleapis.com"
+            />
+            <link
+                  rel="preconnect"
+                  href="https://fonts.gstatic.com"
+                  crossorigin
+            />
+            <link
+                  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+                  rel="stylesheet"
+            />
+
+            <title>Frontend Mentor | News homepage</title>
+            <script
+                  src="./index.js"
+                  defer
+            ></script>
+      </head>
+      <body class="relative min-h-screen bg-[#F2F2F2] font-['Inter']">
+            <header
+                  class="col-span-full mx-auto flex max-w-[1440px] items-center justify-between py-[30px] px-4"
+            >
+                  <img
+                        src="./assets/images/logo.svg"
+                        alt=""
+                  />
+                  <button
+                        class="burger-button right-[16px] z-10 flex h-10 w-[30px] cursor-pointer items-center justify-end sm:hidden"
+                  >
+                        <span
+                              class="burger-top absolute block h-[3px] w-[30px] translate-y-[-10px] bg-[#00001A]"
+                        ></span>
+                        <span
+                              class="burger-middle absolute block h-[3px] w-[30px] bg-[#00001A]"
+                        ></span>
+                        <span
+                              class="burger-bottom absolute block h-[3px] w-[30px] translate-y-[10px] bg-[#00001A]"
+                        ></span>
+                  </button>
+                  <nav class="nav-menu absolute translate-x-[100%] lg:translate-x-[0]">
+                        <ul
+                              class="nav-list flex flex-col gap-[1.5rem] pl-[1.5rem] text-[18px] leading-[1.5rem] text-[#00001A] sm:flex-row sm:bg-[#F2F2F2] sm:pl-0"
+                        >
+                              <li>
+                                    <a href="#"> Home </a>
+                              </li>
+                              <li>
+                                    <a href="#"> New </a>
+                              </li>
+                              <li>
+                                    <a href="#"> Popular </a>
+                              </li>
+                              <li>
+                                    <a href="#"> Trending </a>
+                              </li>
+                              <li>
+                                    <a href="#"> Categories </a>
+                              </li>
+                        </ul>
+                  </nav>
+            </header>
+            <main
+                  class="grid-cols-[repeat(3,minmax(320px,1fr)] mx-auto grid max-w-[1440px] gap-[30px] px-4"
+            >
+                  <h1
+                        class="col-span-full text-[2.5rem] font-extrabold leading-[2.5rem] text-[#00001A] sm:col-span-1 sm:row-start-2 sm:text-[3.5rem] sm:leading-[3.5rem]"
+                  >
+                        The Bright Future of Web 3.0?
+                  </h1>
+                  <div
+                        class="col-span-full flex flex-col gap-[1.5rem] sm:col-span-1 sm:col-start-2 sm:row-start-2"
+                  >
+                        <p class="text-[15px] leading-[26px] text-[#5E607A]">
+                              We dive into the next evolution of the web that claims to put the
+                              power of the platforms back into the hands of the people. But is it
+                              really fulfilling its promise?
+                        </p>
+                        <span class="inline-block"
+                              ><a
+                                    href=""
+                                    class="inline-block bg-[#F15D51] px-9 py-[12px] text-[14px] font-bold uppercase tracking-[4.375px] text-[#FFFDFA]"
+                              >
+                                    Read more
+                              </a>
+                        </span>
+                  </div>
+                  <picture class="order-first col-span-1 col-start-1 row-start-1 sm:col-span-2">
+                        <source
+                              media="(min-width: 686px)"
+                              srcset="./assets/images/image-web-3-desktop.jpg"
+                              sizes=""
+                        />
+                        <img
+                              src="./assets/images/image-web-3-mobile.jpg"
+                              alt=""
+                              class=""
+                        />
+                  </picture>
+                  <section
+                        class="col-span-full flex flex-col bg-[#00001A] py-[1.5rem] px-[20px] sm:col-span-1 sm:col-start-1 sm:row-span-3 sm:row-start-3 xl:col-start-3 xl:row-span-2 xl:row-start-1"
+                  >
+                        <h2 class="text-[2rem] font-bold leading-[2rem] text-[#E9AA52]">New</h2>
+                        <div class="flex grow flex-col gap-[.5rem] py-[30px]">
+                              <h3
+                                    class="text-[1.25rem] font-extrabold leading-[1.5rem] text-[#FFFDFA]"
+                              >
+                                    <a
+                                          href="#"
+                                          class="hover:text-[#E9AA52]"
+                                    >
+                                          Hydrogen VS Electric Cars
+                                    </a>
+                              </h3>
+                              <p class="text-[15px] leading-[26px] text-[#C5C6CE]">
+                                    Will hydrogen-fueled cars ever catch up to EVs?
+                              </p>
+                        </div>
+                        <div
+                              class="flex grow flex-col gap-[.5rem] border-y-[1px] border-[#5E607A] py-[30px]"
+                        >
+                              <h3
+                                    class="text-[1.25rem] font-extrabold leading-[1.5rem] text-[#FFFDFA]"
+                              >
+                                    <a
+                                          href="#"
+                                          class="hover:text-[#E9AA52]"
+                                    >
+                                          The Downsides of AI Artistry
+                                    </a>
+                              </h3>
+                              <p class="text-[15px] leading-[26px] text-[#C5C6CE]">
+                                    What are the possible adverse effects of on-demand AI image
+                                    generation?
+                              </p>
+                        </div>
+                        <div class="flex grow flex-col gap-[.5rem] py-[30px]">
+                              <h3
+                                    class="text-[1.25rem] font-extrabold leading-[1.5rem] text-[#FFFDFA]"
+                              >
+                                    <a
+                                          href="#"
+                                          class="hover:text-[#E9AA52]"
+                                    >
+                                          Is VC Funding Drying Up?
+                                    </a>
+                              </h3>
+                              <p class="text-[15px] leading-[26px] text-[#C5C6CE]">
+                                    Private funding by VC firms is down 50% YOY. We take a look at
+                                    what that means.
+                              </p>
+                        </div>
+                  </section>
+                  <div
+                        class="col-span-full row-span-1 flex flex-row gap-[1.5rem] sm:col-span-1 sm:col-start-2 sm:row-span-1 sm:row-start-3 xl:col-start-1 xl:max-w-[350px]"
+                  >
+                        <div class="flex flex-col justify-between">
+                              <h2
+                                    class="order-2 text-[18px] font-extrabold leading-[1.5rem] text-[#00001A]"
+                              >
+                                    <a
+                                          href="#"
+                                          class="hover:text-[#F15D51]"
+                                    >
+                                          Reviving Retro PCs
+                                    </a>
+                              </h2>
+                              <span
+                                    class="order-1 text-[2rem] font-bold leading-[2rem] text-[#C5C6CE]"
+                              >
+                                    01
+                              </span>
+                              <p class="order-3 text-[15px] leading-[26px] text-[#5E607A]">
+                                    What happens when old PCs are given modern upgrades?
+                              </p>
+                        </div>
+                        <img
+                              src="./assets/images/image-retro-pcs.jpg"
+                              alt=""
+                              class="order-first w-[100px] object-cover"
+                        />
+                  </div>
+                  <div
+                        class="sm:rowstart-4 col-span-full flex flex-row gap-[1.5rem] sm:col-span-1 sm:col-start-2 sm:row-span-1 xl:row-start-3 xl:max-w-[350px]"
+                  >
+                        <div class="flex flex-col justify-between">
+                              <h2
+                                    class="order-2 text-[18px] font-extrabold leading-[1.5rem] text-[#00001A]"
+                              >
+                                    <a
+                                          href="#"
+                                          class="hover:text-[#F15D51]"
+                                    >
+                                          Top 10 Laptops of 2022
+                                    </a>
+                              </h2>
+                              <span
+                                    class="order-1 text-[2rem] font-bold leading-[2rem] text-[#C5C6CE]"
+                              >
+                                    02
+                              </span>
+                              <p class="order-3 text-[15px] leading-[26px] text-[#5E607A]">
+                                    Our best picks for various needs and budgets.
+                              </p>
+                        </div>
+                        <img
+                              src="./assets/images/image-top-laptops.jpg"
+                              alt=""
+                              class="order-first w-[100px] object-cover"
+                        />
+                  </div>
+                  <div
+                        class="col-span-full flex flex-row gap-[1.5rem] sm:col-span-1 sm:col-start-2 sm:row-span-1 sm:row-start-5 xl:col-start-3 xl:row-start-3 xl:max-w-[350px]"
+                  >
+                        <div class="flex flex-col justify-between">
+                              <h2
+                                    class="order-2 text-[18px] font-extrabold leading-[1.5rem] text-[#00001A]"
+                              >
+                                    <a
+                                          href="#"
+                                          class="hover:text-[#F15D51]"
+                                    >
+                                          The Growth of Gaming
+                                    </a>
+                              </h2>
+                              <span
+                                    class="order-1 text-[2rem] font-bold leading-[2rem] text-[#C5C6CE]"
+                              >
+                                    03
+                              </span>
+                              <p class="order-3 text-[15px] leading-[26px] text-[#5E607A]">
+                                    How the pandemic has sparked fresh opportunities.
+                              </p>
+                        </div>
+                        <img
+                              src="./assets/images/image-gaming-growth.jpg"
+                              alt=""
+                              class="order-first w-[100px] object-cover"
+                        />
+                  </div>
+            </main>
+      </body>
+</html>
