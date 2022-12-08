@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+            />
+            <title>Frontend Mentor | Notifications page</title>
+
+            <link
+                  rel="stylesheet"
+                  href="./output.css"
+            />
+
+            <link
+                  rel="icon"
+                  type="image/png"
+                  sizes="32x32"
+                  href="./assets/images/favicon-32x32.png"
+            />
+            <link
+                  rel="preconnect"
+                  href="https://fonts.googleapis.com"
+            />
+            <link
+                  rel="preconnect"
+                  href="https://fonts.gstatic.com"
+                  crossorigin
+            />
+            <link
+                  href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
+                  rel="stylesheet"
+            />
+            <script
+                  src="./index.js"
+                  defer
+            ></script>
+      </head>
+      <body
+            class="font-['Plus_Jakarta_Sans'] min-h-screen bg-[#F7FAFD] flex justify-center items-center"
+      >
+            <main
+                  class="max-w-[730px] bg-white px-4 pt-4 md:pb-[1.875rem] md:px-[1.875rem] md:pt-8"
+            >
+                  <div class="flex justify-between">
+                        <h1 class="font-extrabold text-[1.25rem] text-[#1C202B]">
+                              Notifications
+                              <span
+                                    class="text-white inline-block bg-[#0A327B] px-[0.75rem] rounded-md ml-[9px] unread-notifications"
+                              >
+                              </span>
+                        </h1>
+                        <button class="text-[14px] text-[#5E6778] hover:text-[#0A327B]">
+                              Mark all as read
+                        </button>
+                  </div>
+                  <section class="notifications flex flex-col gap-[.625rem] mt-6">
+                        <section
+                              class="flex items-start rounded-lg p-4 gap-[14px] text-[14px] notification unread"
+                        >
+                              <div class="flex flex-col">
+                                    <p class="text-[#5E6778]">
+                                          <span class="text-[#1C202B] font-extrabold">
+                                                <a
+                                                      href="#"
+                                                      class="hover:text-[#0A327B]"
+                                                >
+                                                      Mark Webber
+                                                </a>
+                                          </span>
+                                          reacted to your recent post
+                                          <span class="font-bold">
+                                                <a
+                                                      href="#"
+                                                      class="hover:text-[#0A327B]"
+                                                >
+                                                      My first tournament today!
+                                                </a>
+                                          </span>
+                                          <span
+                                                class="inline-block h-2 w-2 bg-[#F65552] rounded-full translate-x-[5px] translate-y-[-1px]"
+                                          >
+                                          </span>
+                                    </p>
+                                    <span class="text-[#939CAD] block"> 1m ago </span>
+                              </div>
+                              <img
+                                    src="./assets/images/avatar-mark-webber.webp"
+                                    alt=""
+                                    class="h-10 w-10 order-first"
+                              />
+                        </section>
+                        <section
+                              class="flex items-start rounded-lg p-4 gap-[14px] text-[14px] notification unread"
+                        >
+                              <div class="flex flex-col">
+                                    <p class="text-[#5E6778]">
+                                          <span class="text-[#1C202B] font-extrabold">
+                                                <a
+                                                      href="#"
+                                                      class="hover:text-[#0A327B]"
+                                                >
+                                                      Angela Gray
+                                                </a>
+                                          </span>
+                                          followed you
+                                          <span
+                                                class="inline-block h-2 w-2 bg-[#F65552] rounded-full translate-x-[5px] translate-y-[-1px]"
+                                          >
+                                          </span>
+                                    </p>
+                                    <span class="text-[#939CAD] block"> 5m ago </span>
+                              </div>
+                              <img
+                                    src="./assets/images/avatar-angela-gray.webp"
+                                    alt=""
+                                    class="h-10 w-10 order-first"
+                              />
+                        </section>
+                        <section
+                              class="flex items-start rounded-lg p-4 gap-[14px] text-[14px] notification unread"
+                        >
+                              <div class="flex flex-col">
+                                    <p class="text-[#5E6778]">
+                                          <span class="text-[#1C202B] font-extrabold">
+                                                <a
+                                                      href="#"
+                                                      class="hover:text-[#0A327B]"
+                                                >
+                                                      Jacob Thompson
+                                                </a>
+                                          </span>
+                                          has joined your group
+                                          <span class="font-bold text-[#0A327B]">
+                                                <a
+                                                      href="#"
+                                                      class="hover:text-[#0A327B]"
+                                                >
+                                                      Chess Club
+                                                </a>
+                                          </span>
+                                          <span
+                                                class="inline-block h-2 w-2 bg-[#F65552] rounded-full translate-x-[5px] translate-y-[-1px]"
+                                          >
+                                          </span>
+                                    </p>
+                                    <span class="text-[#939CAD] block"> 1 day ago </span>
+                              </div>
+                              <img
+                                    src="./assets/images/avatar-jacob-thompson.webp"
+                                    alt=""
+                                    class="h-10 w-10 order-first"
+                              />
+                        </section>
+                        <section
+                              class="flex items-start rounded-lg p-4 gap-[14px] text-[14px] notification unread"
+                        >
+                              <div class="flex flex-col w-full dropdown">
+                                    <p class="text-[#5E6778]">
+                                          <span class="text-[#1C202B] font-extrabold">
+                                                <a
+                                                      href="#"
+                                                      class="hover:text-[#0A327B]"
+                                                >
+                                                      Rizky Hasanuddin
+                                                </a>
+                                          </span>
+                                          sent you a private message
+                                    </p>
+                                    <span class="text-[#939CAD] block"> 5 days ago </span>
+                                    <p
+                                          class="hover:bg-[#E5EFFA] private-message text-[#5E6778] p-5 border border-[#DDE7EE] rounded-md mt-3 notification-details hidden rotate hover:cursor-pointer"
+                                    >
+                                          Hello, thanks for setting up the Chess Club. I've been a
+                                          member for a few weeks now and I'm already having lots of
+                                          fun and improving my game.
+                                    </p>
+                              </div>
+                              <img
+                                    src="./assets/images/avatar-rizky-hasanuddin.webp"
+                                    alt=""
+                                    class="h-10 w-10 order-first"
+                              />
+                        </section>
+                        <section
+                              class="flex items-start rounded-lg p-4 gap-[14px] text-[14px] notification unread"
+                        >
+                              <div class="flex flex-col">
+                                    <p class="text-[#5E6778]">
+                                          <span class="text-[#1C202B] font-extrabold">
+                                                <a
+                                                      href="#"
+                                                      class="hover:text-[#0A327B]"
+                                                >
+                                                      Kimberly Smith
+                                                </a>
+                                          </span>
+                                          commented on your picture
+                                    </p>
+                                    <span class="text-[#939CAD] block"> 1 week ago </span>
+                              </div>
+                              <a
+                                    href="#"
+                                    class="ml-auto"
+                              >
+                                    <img
+                                          src="./assets/images/image-chess.webp"
+                                          alt="girl musing over chess board"
+                                          class="h-[2.8rem] w-[2.8rem]"
+                                    />
+                              </a>
+                              <img
+                                    src="./assets/images/avatar-kimberly-smith.webp"
+                                    alt=""
+                                    class="h-10 w-10 order-first"
+                              />
+                        </section>
+                        <section
+                              class="flex items-start rounded-lg p-4 gap-[14px] text-[14px] notification unread"
+                        >
+                              <div class="flex flex-col">
+                                    <p class="text-[#5E6778]">
+                                          <span class="text-[#1C202B] font-extrabold">
+                                                <a
+                                                      href="#"
+                                                      class="hover:text-[#0A327B]"
+                                                >
+                                                      Nathan Peterson
+                                                </a>
+                                          </span>
+                                          reacted to your recent post
+                                          <span class="font-bold">
+                                                <a
+                                                      href="#"
+                                                      class="hover:text-[#0A327B]"
+                                                >
+                                                      5 end-game strategies to increase your win
+                                                      rate
+                                                </a>
+                                          </span>
+                                    </p>
+                                    <span class="text-[#939CAD] block"> 2 weeks ago </span>
+                              </div>
+                              <img
+                                    src="./assets/images/avatar-nathan-peterson.webp"
+                                    alt=""
+                                    class="h-10 w-10 order-first"
+                              />
+                        </section>
+                        <section
+                              class="flex items-start rounded-lg p-4 gap-[14px] text-[14px] notification unread"
+                        >
+                              <div class="flex flex-col">
+                                    <p class="text-[#5E6778]">
+                                          <span class="text-[#1C202B] font-extrabold">
+                                                <a
+                                                      href="#"
+                                                      class="hover:text-[#0A327B]"
+                                                >
+                                                      Anna Kim
+                                                </a>
+                                          </span>
+                                          left the group
+                                          <span class="font-bold text-[#0A327B]">
+                                                <a
+                                                      href="#"
+                                                      class="hover:text-[#0A327B]"
+                                                >
+                                                      Chess Club
+                                                </a>
+                                          </span>
+                                          <span class="text-[#939CAD] block"> 2 weeks ago </span>
+                                    </p>
+                              </div>
+                              <img
+                                    src="./assets/images/avatar-anna-kim.webp"
+                                    alt=""
+                                    class="h-10 w-10 order-first"
+                              />
+                        </section>
+                  </section>
+            </main>
+      </body>
+</html>
