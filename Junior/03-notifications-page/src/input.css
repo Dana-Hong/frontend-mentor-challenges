@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .notification-details {
+      display: none;
+} */
+
+.unread {
+      background-color: #f7fafd;
+}
+
+.notification-details--animated {
+      display: block;
+}
+
+.rotate {
+      animation: rotateMenu 300ms ease-in-out forwards;
+      transform-origin: top center;
+}
+
+@keyframes rotateMenu {
+      0% {
+            transform: rotateX(-90deg);
+      }
+      70% {
+            transform: rotateX(20deg);
+      }
+      100% {
+            transform: rotateX(0deg);
+      }
+}
