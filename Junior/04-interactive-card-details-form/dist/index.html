@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+            />
+            <title>Frontend Mentor | Interactive card details form</title>
+
+            <link
+                  rel="icon"
+                  type="image/png"
+                  sizes="32x32"
+                  href="./images/favicon-32x32.png"
+            />
+            <link
+                  rel="stylesheet"
+                  href="./output.css"
+            />
+            <link
+                  rel="preconnect"
+                  href="https://fonts.googleapis.com"
+            />
+            <link
+                  rel="preconnect"
+                  href="https://fonts.gstatic.com"
+                  crossorigin
+            />
+            <link
+                  href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+                  rel="stylesheet"
+            />
+            <script
+                  src="./index.js"
+                  defer
+            ></script>
+      </head>
+      <body class="min-h-screen font-['Space_Grotesk']">
+            <main class="flex min-h-screen flex-col lg:flex-row">
+                  <section
+                        class="relative h-[240px] min-w-[33%] justify-between bg-[url('../images/bg-main-mobile.png')] bg-cover bg-no-repeat text-white lg:h-screen lg:bg-[url('../images/bg-main-desktop.png')]"
+                  >
+                        <div
+                              class="relative top-[8.5%] mx-auto h-[calc(100%+5%)] w-[92%] max-w-[500px] pt-[13.3%] lg:top-[50%] lg:left-[33%] lg:h-[60%] lg:w-[calc(100%+12%)] lg:translate-y-[-50%] xl:max-h-[580px]"
+                        >
+                              <div
+                                    class="relative bottom-[-45px] left-0 z-10 w-[83%] max-w-[286px] lg:top-0 xl:max-w-[447px]"
+                              >
+                                    <img
+                                          src="./images/bg-card-front.png"
+                                          alt=""
+                                    />
+                                    <img
+                                          src="./images/card-logo.svg"
+                                          alt=""
+                                          class="absolute top-[8.73%] left-[6.66%]"
+                                    />
+                                    <div
+                                          class="absolute bottom-[8.73%] left-[6.66%] flex w-[86%] flex-col justify-between gap-5"
+                                    >
+                                          <span class="card-number text-[18px] tracking-[2.2px]">
+                                                0000 0000 0000 0000
+                                          </span>
+                                          <div
+                                                class="flex justify-between text-[9px] tracking-[1.3px]"
+                                          >
+                                                <span class="card-name uppercase">
+                                                      Jane Appleseed
+                                                </span>
+
+                                                <span class="card-date"> 00/00 </span>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div
+                                    class="absolute top-0 right-0 w-[83%] max-w-[286px] lg:bottom-0 lg:top-[unset] xl:max-w-[447px]"
+                              >
+                                    <img
+                                          src="./images/bg-card-back.png"
+                                          alt=""
+                                    />
+                                    <span
+                                          class="absolute top-[50%] right-[12%] translate-y-[-50%] text-[9px]"
+                                          >000</span
+                                    >
+                              </div>
+                        </div>
+                  </section>
+                  <section class="flex grow items-center justify-center">
+                        <form
+                              action="#"
+                              class="grid max-w-[326px] grid-cols-4 gap-y-5 text-[#21092F] lg:max-w-[400px]"
+                        >
+                              <div class="col-span-full flex flex-col gap-2.5">
+                                    <label
+                                          for="cardholder-name"
+                                          class="text-xs uppercase tracking-[2px]"
+                                    >
+                                          Cardholder Name
+                                    </label>
+                                    <div class="rounded-lg bg-[#DFDEE0] p-[1px]">
+                                          <input
+                                                id="cardholder-name"
+                                                name="name"
+                                                type="text"
+                                                minlength="3"
+                                                required
+                                                placeholder="e.g. Jane Appleseed"
+                                                pattern="^[a-zA-Z ,'-]+$"
+                                                class="w-full rounded-[7px] py-2.5 pl-4 text-lg outline-0 placeholder:opacity-50"
+                                          />
+                                    </div>
+                                    <span class="error-element block text-xs text-[#FF5050]"></span>
+                              </div>
+                              <div class="col-span-full flex flex-col gap-2.5">
+                                    <label
+                                          for="card-number"
+                                          class="text-xs uppercase tracking-[2px]"
+                                    >
+                                          Card Number
+                                    </label>
+                                    <div class="rounded-lg bg-[#DFDEE0] p-[1px]">
+                                          <input
+                                                id="card-number"
+                                                name="Card number"
+                                                type="text"
+                                                required
+                                                minlength="16"
+                                                maxlength="16"
+                                                pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"
+                                                placeholder="e.g. 1234 5678 9123 0000"
+                                                class="w-full rounded-[7px] py-2.5 pl-4 text-lg outline-0 placeholder:opacity-50"
+                                          />
+                                    </div>
+                                    <span class="error-element block text-xs text-[#FF5050]"></span>
+                              </div>
+                              <div class="col-span-2">
+                                    <fieldset>
+                                          <div class="flex items-center">
+                                                <legend class="text-xs uppercase tracking-[2px]">
+                                                      Exp. Date
+                                                </legend>
+
+                                                <label
+                                                      for="month"
+                                                      class="ml-[2px] text-xs uppercase tracking-[2px]"
+                                                      >(MM/</label
+                                                >
+                                                <label
+                                                      for="year"
+                                                      class="text-xs uppercase tracking-[2px]"
+                                                      >YY)</label
+                                                >
+                                          </div>
+                                          <div class="mt-2.5 mr-5 flex justify-between gap-[9px]">
+                                                <div class="flex grow flex-col gap-2.5">
+                                                      <div
+                                                            class="rounded-lg bg-gradient-to-b from-[#6348FE] to-[#610595] p-[1px]"
+                                                      >
+                                                            <input
+                                                                  id="month"
+                                                                  name="month"
+                                                                  type="text"
+                                                                  placeholder="MM"
+                                                                  required
+                                                                  minlength="2"
+                                                                  maxlength="2"
+                                                                  pattern="0[1-9]|1[0-2]"
+                                                                  class="w-[72px] rounded-[7px] border border-[#DFDEE0] py-2.5 pl-4 text-lg outline-0 placeholder:opacity-50 lg:w-full"
+                                                            />
+                                                      </div>
+                                                      <span
+                                                            class="error-element block text-xs text-[#FF5050]"
+                                                      ></span>
+                                                </div>
+                                                <div class="flex grow flex-col gap-2.5">
+                                                      <div
+                                                            class="rounded-lg bg-gradient-to-b from-[#6348FE] to-[#610595] p-[1px]"
+                                                      >
+                                                            <input
+                                                                  id="year"
+                                                                  name="year"
+                                                                  type="text"
+                                                                  placeholder="YY"
+                                                                  required
+                                                                  minlength="2"
+                                                                  maxlength="2"
+                                                                  pattern="0[1-9]|1[0-9]|2[0-9]|3[0-1]"
+                                                                  class="w-[72px] rounded-[7px] border border-[#DFDEE0] py-2.5 pl-4 text-lg outline-0 placeholder:opacity-50 lg:w-full"
+                                                            />
+                                                      </div>
+                                                      <span
+                                                            class="error-element block text-xs text-[#FF5050]"
+                                                      ></span>
+                                                </div>
+                                          </div>
+                                    </fieldset>
+                              </div>
+                              <div class="col-span-2 flex flex-col gap-2.5">
+                                    <label
+                                          for="CVC"
+                                          class="text-xs uppercase tracking-[2px]"
+                                    >
+                                          CVC
+                                    </label>
+                                    <div
+                                          class="rounded-lg bg-gradient-to-b from-[#6348FE] to-[#610595] p-[1px]"
+                                    >
+                                          <input
+                                                id="cvc"
+                                                name="CVC"
+                                                type="text"
+                                                placeholder="e.g. 123"
+                                                pattern="/^[0-9]{3,4}$/"
+                                                class="w-full rounded-[7px] border border-[#DFDEE0] py-2.5 pl-4 text-lg outline-0 placeholder:opacity-50"
+                                          />
+                                    </div>
+                                    <span class="error-element block text-xs text-[#FF5050]"></span>
+                              </div>
+                              <button
+                                    class="confirm-button col-span-full mt-2 rounded-lg bg-[#21092F] py-4 text-[18px] text-white"
+                              >
+                                    Confirm
+                              </button>
+                        </form>
+                        <div
+                              class="form-complete flex hidden w-[87%] max-w-[400px] flex-col items-center"
+                        >
+                              <img
+                                    src="./images/icon-complete.svg"
+                                    alt="checkmark icon"
+                              />
+                              <span
+                                    class="mt-9 text-[28px] uppercase tracking-[3.4px] text-[#21092F]"
+                                    >Thank you!</span
+                              >
+                              <span class="mt-4 text-[18px] text-[#8F8694]"
+                                    >We've added your card details</span
+                              >
+                              <button
+                                    class="mt-12 w-full rounded-lg bg-[#21092F] py-4 text-[18px] text-white"
+                              >
+                                    Continue
+                              </button>
+                        </div>
+                  </section>
+            </main>
+      </body>
+</html>
