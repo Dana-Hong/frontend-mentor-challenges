@@ -21,6 +21,14 @@ function App() {
             <p>Always affordable pricing that scales with your business. Get top-quality product data analytics services without hidden costs or unexpected fees.</p>
           </div>
         </section>
+        <section>
+          <img src="/src/assets/image-removebg-preview(363).png" alt="" />
+          <div>
+            <p>Be the first to test</p>
+            <p>Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a beta tester for our app and kickstart your company. Apply for access below and I'll be in touch to schedule a call.</p>
+            <a href="#">Apply for access</a>
+          </div>
+        </section>
       </main>
     </>
   )
