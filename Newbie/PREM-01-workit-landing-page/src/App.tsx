@@ -2,14 +2,15 @@ import Nav from "./components/Nav"
 import Hero from "./components/Hero"
 import Footer from "./components/Footer"
 
+import Button from "./components/Button"
+
 function App() {
   return (
-    <>
-      <img src="/src/assets/mobile-rectangle.png" alt="" />
+    <div>
       <Nav />
-      <main className="font-manrope">
+      <main>
         <Hero />
-        <section className="flex flex-col gap-10 px-4">
+        <section className="relative -z-10 bg-main-background bg-bottom bg-no-repeat -translate-y-24 flex flex-col gap-10 pt-44 pb-16 px-4">
           <div className="flex flex-col items-center gap-6">
             <div>
               <img src="/src/assets/num1.svg" alt="" />
@@ -39,16 +40,18 @@ function App() {
           </div>
         </section>
         <section>
-          <img src="/src/assets/image-removebg-preview(363).png" alt="" />
-          <div>
-            <p>Be the first to test</p>
-            <p>Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a beta tester for our app and kickstart your company. Apply for access below and I'll be in touch to schedule a call.</p>
-            <a href="#">Apply for access</a>
+          <img className="mx-auto" src="/src/assets/image-removebg-preview(363).png" alt="" />
+          <div className="mx-4 -translate-y-14 bg-dark-purple text-white p-8">
+            <p className="text-center font-fraunces text-[2rem] leading-[3rem]">Be the first to test</p>
+            <p className="pt-4 pb-6 text-center leading-7">Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a beta tester for our app and kickstart your company. Apply for access below and I'll be in touch to schedule a call.</p>
+            <Button className="mx-auto" >
+              Apply for access
+            </Button>
           </div>
         </section>
       </main>
       <Footer />
-    </>
+    </div>
   )
 }
 

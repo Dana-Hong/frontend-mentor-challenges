@@ -1,12 +1,13 @@
 type ButtonProps = {
     type?: 'primary | secondary';
     children: React.ReactNode;
+    className?: string;
 }
 
-const Button = ({ type, children }: ButtonProps) => {
+const Button = ({ type, children, className }: ButtonProps) => {
     return (
         <a 
-            className="
+            className={`
                 block
                 w-fit
                 py-3
@@ -15,7 +16,9 @@ const Button = ({ type, children }: ButtonProps) => {
                 bg-eucaplyptus 
                 text-dark-purple 
                 hover:bg-dark-purple 
-                hover:text-white hover:underline">
+                hover:text-white hover:underline
+                ${className}
+                `}>
             {children}
         </a>
     )

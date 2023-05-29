@@ -6,10 +6,15 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'hero-background': "url('/src/assets/mobile-purple-bg.png')",
+        'main-background': "url('/src/assets/mobile-ghostwhite-bg.png')"
+      },
       colors: {
         "dark-purple": "#24053e",
+        "davys-gray": "#584d62",
         "eucaplyptus": "#44ffa1",
-        "davys-gray": "#584d62"
+        "ghostwhite": "#fcf8ff"
       },
       fontFamily: {
         fraunces: "'Fraunces', serif",
