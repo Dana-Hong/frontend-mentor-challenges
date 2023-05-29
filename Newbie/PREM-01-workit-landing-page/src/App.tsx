@@ -1,8 +1,10 @@
+import Nav from "./components/Nav"
+
 function App() {
   return (
-    <div className='text-4xl'>
-      Hello world!
-    </div>
+    <>
+      <Nav />
+    </>
   )
 }
 
