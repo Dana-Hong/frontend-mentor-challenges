@@ -5,6 +5,7 @@ import Footer from "./components/Footer"
 function App() {
   return (
     <>
+      <img src="/src/assets/mobile-rectangle.png" alt="" />
       <Nav />
       <main className="font-manrope">
         <Hero />
