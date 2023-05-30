@@ -1,25 +1,49 @@
+import { useEffect, useState } from 'react';
 import Button from "./Button"
 
 const Hero = () => {
+    const [screenSize, setscreenSize] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => setscreenSize(window.innerWidth);
+        window.addEventListener('resize', handleResize);
+        console.log(screenSize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        }
+    }, []);
+
+    const renderSpirals = (screenSize: number, spiral: 'left' | 'right') => {
+        if (screenSize < 540) return;
+        return spiral === 'left' 
+            ?
+            <img className="absolute left-0" src="/src/assets/left-bg-spiral.svg" alt="" /> 
+            :
+            <img className="absolute right-0 top-1/3" src="/src/assets/right-bg-spiral.svg" alt="" /> 
+
+
+
+    }
+    
     return (
-        <section className="relative -mt-16 bg-hero-background bg-no-repeat flex flex-col gap-16 items-center pt-32">
-            <div className="flex flex-col gap-10 items-center">
-                <h1 className="text-5xl text-white text-center font-fraunces" >Data <span className="underline decoration-eucaplyptus underline-offset-8">tailored</span> to your needs.</h1>
+        <section className="relative -mt-16 min-[376px]-mt-0 bg-hero-background min-[376px]:bg-tablet-hero-background min-[376px]:bg-center bg:cover bg-no-repeat flex flex-col gap-16 items-center pt-32 min-[376px]:pt-16">
+            <div className="flex flex-col gap-10 items-center min-[376px]:pt-14">
+                <h1 className="text-5xl text-white text-center font-fraunces max-w-md" >Data <span className="underline decoration-eucaplyptus underline-offset-8">tailored</span> to your needs.</h1>
                 <Button>
                     Learn More
                 </Button>
             </div>
-            <img className="z-20" src="/src/assets/iPhone 11 [Front].svg" alt="iPhone11" />
+            
+            <picture>
+                <source media="(max-width:375px)" srcSet="/mobile-iPhone.svg" />
+                <source media="(min-width:376px)" srcSet="/tablet-iPhone.svg" />
+                <source media="(min-width:768px)" srcSet="/desktop-iPhone.svg" />
+                <img className="z-20" src="/mobile-iphone.svg" alt="iPhone11" />
+            </picture>
+            {renderSpirals(screenSize, 'left')}
+            {renderSpirals(screenSize, 'right')}
         </section>
-        // <section className="flex flex-col gap-16 items-center pt-16">
-        //     <div className="flex flex-col gap-10 items-center">
-        //         <h1 className="text-5xl text-white text-center font-fraunces" >Data <span className="underline decoration-eucaplyptus">tailored</span> to your needs.</h1>
-        //         <Button>
-        //             Learn More
-        //         </Button>
-        //     </div>
-        //     <img className="z-20" src="/src/assets/iPhone 11 [Front].svg" alt="iPhone11" />
-        // </section>
     )
 }
 
