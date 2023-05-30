@@ -21,15 +21,15 @@ const Hero = ({ screenSize }: { screenSize: number }) => {
     const renderIphone = (screenSize: number) => {
         if (screenSize < 376) {
             return "/mobile-iPhone.svg";
-        } else if (screenSize < 767) {
+        } else if (screenSize < 1280) {
             return "/tablet-iPhone.svg";
         }
         return "/desktop-iPhone.svg";
     }
     
     return (
-        <section className="relative -mt-16 min-[376px]-mt-0 bg-hero-background md:bg-desktop-hero-background min-[376px]:bg-tablet-hero-background min-[376px]:bg-center md:bg-bottom bg:cover bg-no-repeat flex flex-col gap-16 items-center pt-32 min-[376px]:pt-16 lg:max-w-[1440px] lg:mx-auto">
-            <div className="flex flex-col gap-10 items-center min-[376px]:pt-14">
+        <section className="relative -mt-16 min-[376px]-mt-0 bg-hero-background md:bg-desktop-hero-background min-[376px]:bg-tablet-hero-background min-[376px]:bg-center md:bg-bottom bg:cover bg-no-repeat flex flex-col gap-16 items-center pt-32 min-[376px]:pt-16 lg:max-w-[1440px] lg:mx-auto lg:pt-8">
+            <div className="flex flex-col gap-10 items-center min-[376px]:pt-14 lg:pt-16">
                 <h1 className="text-5xl text-white text-center font-fraunces max-w-md" >Data <span className="underline decoration-eucaplyptus underline-offset-8">tailored</span> to your needs.</h1>
                 <Button>
                     Learn More
