@@ -28,10 +28,10 @@ function App() {
       <Nav />
       <main>
         <Hero screenSize={screenSize} />
-        <section className="relative -z-10 bg-main-background min-[376px]:bg-tablet-main-background md:bg-desktop-main-background bg-bottom bg-no-repeat -translate-y-24 flex flex-col lg:max-w-[1440px] lg:justify-evenly lg:mx-auto lg:flex-row gap-10 sm:gap-12 pt-44 pb-16 lg:pb-44 px-4">
+        <section className="relative -z-10 bg-main-background md:bg-desktop-main-background min-[376px]:bg-tablet-main-background bg-bottom bg-no-repeat -translate-y-24 flex flex-col lg:max-w-[1440px] lg:justify-evenly lg:mx-auto lg:flex-row gap-10 sm:gap-12 pt-44 pb-16 lg:pb-44 px-4">
           <div className="flex flex-col sm:flex-row lg:flex-col sm:justify-center items-center gap-6 sm:gap-8">
             <div>
-              <img src="/src/assets/num1.svg" alt="" />
+              <img src="/num1.svg" alt="" />
             </div>
             <div className="flex flex-col gap-4 text-center sm:text-left sm:max-w-lg">
               <p className="font-fraunces text-dark-purple text-3xl lg:text-center">Actionable Insights</p>
@@ -40,7 +40,7 @@ function App() {
           </div>
           <div className="flex flex-col sm:flex-row lg:flex-col sm:justify-center items-center gap-6 sm:gap-8">
             <div>
-              <img src="/src/assets/num2.svg" alt="" />
+              <img src="/num2.svg" alt="" />
             </div>
             <div className="flex flex-col gap-4 text-center sm:text-left sm:max-w-lg">
               <p className="font-fraunces text-dark-purple text-3xl lg:text-center">Data-driven decisions</p>
@@ -49,7 +49,7 @@ function App() {
           </div>
           <div className="flex flex-col sm:flex-row lg:flex-col sm:justify-center items-center gap-6 sm:gap-8">
             <div>
-              <img src="/src/assets/num3.svg" alt="" />
+              <img src="/num3.svg" alt="" />
             </div>
             <div className="flex flex-col gap-4 text-center sm:text-left sm:max-w-lg">
               <p className="font-fraunces text-dark-purple text-3xl lg:text-center">Always affordable</p>
@@ -60,9 +60,9 @@ function App() {
         <section className="mx-auto flex flex-col items-center sm:items-end sm:max-w-2xl lg:max-w-6xl">
           {screenSize < 1023 
             ? 
-            <img className="sm:self-start" src="/src/assets/image-removebg-preview(363).png" alt="founder" />
+            <img className="sm:self-start" src="/image-removebg-preview(363).png" alt="founder" />
             :
-            <img className="self-start lg:translate-x-20 lg:translate-y-32" src="/src/assets/desktop-founder-headshot.png" alt="founder" />
+            <img className="self-start lg:translate-x-20 lg:translate-y-32" src="/desktop-founder-headshot.png" alt="founder" />
 
           }
           <div className="relative mx-4 min-[376px]:max-w-lg -translate-y-14 sm:-translate-y-32 sm:translate-x-4 bg-dark-purple text-white p-8 sm:px-14 sm:pt-12 sm:pb-14 text-center sm:text-left lg:max-w-3xl">
@@ -71,7 +71,9 @@ function App() {
             <Button className="mx-auto sm:mx-0" >
               Apply for access
             </Button>
-            <img className="absolute right-0 lg:right-10 -bottom-28 lg:-bottom-20" src="/src/assets/founder-bg-spiral.svg" alt="" />
+            {screenSize >= 768 &&
+              <img className="absolute right-0 lg:right-10 -bottom-28 lg:-bottom-20" src="/founder-bg-spiral.svg" alt="" />
+            }
           </div>
         </section>
       </main>

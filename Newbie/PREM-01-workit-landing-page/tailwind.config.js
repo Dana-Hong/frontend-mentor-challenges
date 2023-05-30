@@ -7,12 +7,12 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-background': "url('/src/assets/mobile-purple-bg.png')",
-        'main-background': "url('/src/assets/mobile-ghostwhite-bg.png')",
-        'tablet-hero-background': "url('/src/assets/tablet-purple-bg.png')",
-        'tablet-main-background': "url('src/assets/tablet-ghostwhite-bg.png')",
-        'desktop-hero-background': "url('src/assets/desktop-purple-bg.png')",
-        'desktop-main-background': "url('/src/assets/desktop-ghostwhite-bg.png')"
+        'hero-background': "url('/mobile-purple-bg.png')",
+        'main-background': "url('/mobile-ghostwhite-bg.png')",
+        'tablet-hero-background': "url('/tablet-purple-bg.png')",
+        'tablet-main-background': "url('/tablet-ghostwhite-bg.png')",
+        'desktop-hero-background': "url('/desktop-purple-bg.png')",
+        'desktop-main-background': "url('/desktop-ghostwhite-bg.png')"
       },
       colors: {
         "dark-purple": "#24053e",
