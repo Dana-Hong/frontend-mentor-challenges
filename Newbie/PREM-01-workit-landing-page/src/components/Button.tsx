@@ -1,10 +1,9 @@
 type ButtonProps = {
-    type?: 'primary | secondary';
     children: React.ReactNode;
     className?: string;
 }
 
-const Button = ({ type, children, className }: ButtonProps) => {
+const Button = ({ children, className }: ButtonProps) => {
     return (
         <a 
             className={`

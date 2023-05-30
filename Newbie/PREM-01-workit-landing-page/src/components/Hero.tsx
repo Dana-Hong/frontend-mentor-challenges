@@ -1,19 +1,6 @@
-import { useEffect, useState } from 'react';
 import Button from "./Button"
 
 const Hero = ({ screenSize }: { screenSize: number }) => {
-    // const [screenSize, setscreenSize] = useState(window.innerWidth);
-
-    // useEffect(() => {
-    //     const handleResize = () => setscreenSize(window.innerWidth);
-    //     window.addEventListener('resize', handleResize);
-    //     console.log(screenSize);
-
-    //     return () => {
-    //         window.removeEventListener('resize', handleResize);
-    //     }
-    // }, []);
-
     const renderSpirals = (screenSize: number, spiral: 'left' | 'right') => {
         if (screenSize < 540) return;
         if (screenSize < 1280) {
