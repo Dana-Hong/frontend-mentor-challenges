@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Frontend Mentor | Skilled e-learning landing page</title>
+  </head>
+  <body class="font-Plus-Jakarta-Sans text-text">
+    <nav
+      class="flex justify-between items-center px-4 md:px-10 lg:px-40 pt-4 max-w-[1440px] mx-auto"
+    >
+      <img class="inline-block" src="../assets/logo-dark.svg" alt="logo" />
+      <a class="bg-accent inline-block font-bold text-white py-2 px-6 rounded-[1.75rem]">
+        Get Started
+      </a>
+    </nav>
+    <section
+      class="relative flex flex-col px-4 md:px-10 lg:px-40 md:flex-row max-w-[1440px] overflow-hidden mx-auto"
+    >
+      <div
+        class="flex flex-col gap-6 md:max-w-sm xl:max-w-lg pt-9 md:pb-48 xl:pb-56 md:pt-24 xl:pt-64"
+      >
+        <h1 class="text-[2.5rem] xl:text-6xl text-accent font-extrabold">
+          Maximize skill, minimize budget
+        </h1>
+        <p class="font-medium">
+          Our modern courses across a range of in-demand skills will give you the knowledge you need
+          to live the life you want.
+        </p>
+        <a
+          class="self-start inline-block font-bold text-white bg-gradient-1 py-4 px-9 rounded-[1.75rem]"
+          href="#"
+          >Get Started</a
+        >
+      </div>
+      <div
+        class="md:absolute md:top-0 md:-right-64 md:-translate-y-24 md:max-w-[640px] md:max-h-[640px] xl:max-w-5xl xl:max-h-[950px] xl:-translate-y-44 xl:-right-90"
+      >
+        <picture class="w-full h-full">
+          <source
+            srcset="../assets/image-hero-desktop@2x.webp"
+            type="image/webp"
+            media="(min-width: 1280px) and (min-resolution: 2dppx)"
+          />
+          <source
+            srcset="../assets/image-hero-desktop.webp"
+            type="image/webp"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="../assets/image-hero-desktop@2x.png"
+            media="(min-width: 1280px) and (min-resolution: 2dppx)"
+          />
+
+          <source
+            srcset="../assets/image-hero-tablet@2x.webp"
+            type="image/webp"
+            media="(min-width: 768px) and (min-resolution: 2dppx)"
+          />
+          <source
+            srcset="../assets/image-hero-tablet.webp"
+            type="image/webp"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="../assets/image-hero-tablet@2x.png"
+            media="(min-width: 768px) and (min-resolution: 2dppx)"
+          />
+
+          <source
+            srcset="../assets/image-hero-mobile@2x.webp"
+            type="image/webp"
+            media="(min-resolution: 2dppx)"
+          />
+          <source srcset="../assets/image-hero-mobile.webp" type="image/webp" />
+
+          <img class="w-full" src="../assets/image-hero-mobile.png" alt="hero image" />
+        </picture>
+      </div>
+    </section>
+    <section
+      class="max-w-[1440px] bg-gradient-main-bg grid grid-cols-autofit gap-x-3 lg:gap-x-8 gap-y-10 lg:gap-y-14 px-4 md:px-10 lg:px-40 pb-20 lg:pb-36 mx-auto"
+    >
+      <p class="bg-white text-white text-2xl font-bold bg-gradient-1 py-7 px-7 rounded-xl">
+        Check out our most popular courses!
+      </p>
+      <div class="relative px-7 pt-14 pb-8 bg-white rounded-xl">
+        <div>
+          <p class="text-xl font-extrabold text-accent">Animation</p>
+          <p class="pt-4 pb-6">
+            Learn the latest animation techniques to create stunning motion design and captivate
+            your audience.
+          </p>
+          <a class="text-lg font-bold text-accent-2" href="#"> Get Started </a>
+        </div>
+        <img class="absolute top-0 -translate-y-1/2" src="/assets/icon-animation.svg" alt="" />
+      </div>
+      <div class="relative px-7 pt-14 pb-8 bg-white rounded-xl">
+        <div>
+          <p class="text-xl font-extrabold text-accent">Design</p>
+          <p class="pt-4 pb-6">
+            Create beautiful, usable interfaces to help shape the future of how the web looks.
+          </p>
+          <a class="text-lg font-bold text-accent-2" href="#"> Get Started </a>
+        </div>
+        <img class="absolute top-0 -translate-y-1/2" src="/assets/icon-design.svg" alt="" />
+      </div>
+      <div class="relative px-7 pt-14 pb-8 bg-white rounded-xl">
+        <div>
+          <p class="text-xl font-extrabold text-accent">Photography</p>
+          <p class="pt-4 pb-6">
+            Explore critical fundamentals like lighting, composition, and focus to capture
+            exceptional photos.
+          </p>
+          <a class="text-lg font-bold text-accent-2" href="#"> Get Started </a>
+        </div>
+        <img class="absolute top-0 -translate-y-1/2" src="/assets/icon-photography.svg" alt="" />
+      </div>
+      <div class="relative px-7 pt-14 pb-8 bg-white rounded-xl">
+        <div>
+          <p class="text-xl font-extrabold text-accent">Crypto</p>
+          <p class="pt-4 pb-6">
+            All you need to know to get started investing in crypto. Go from beginner to advanced
+            with this 54 hour course.
+          </p>
+          <a class="text-lg font-bold text-accent-2" href="#"> Get Started </a>
+        </div>
+        <img class="absolute top-0 -translate-y-1/2" src="/assets/icon-crypto.svg" alt="" />
+      </div>
+      <div class="relative px-7 pt-14 pb-8 bg-white rounded-xl">
+        <div>
+          <p class="text-xl font-extrabold text-accent">Business</p>
+          <p class="pt-4 pb-6">
+            A step-by-step playbook to help you start, scale, and sustain your business without
+            outside investment.
+          </p>
+          <a class="text-lg font-bold text-accent-2" href="#"> Get Started </a>
+        </div>
+        <img class="absolute top-0 -translate-y-1/2" src="/assets/icon-business.svg" alt="" />
+      </div>
+    </section>
+    <footer
+      class="flex items-center justify-between bg-accent py-9 px-4 md:px-10 lg:px-40 mx-auto max-w-[1440px]"
+    >
+      <img class="inline-block" src="../assets/logo-light.svg" alt="" />
+      <a
+        class="inline-block bg-gradient-2 font-bold text-white py-2 px-6 rounded-[1.75rem]"
+        href="#"
+      >
+        Get Started
+      </a>
+    </footer>
+  </body>
+</html>
